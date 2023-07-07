@@ -10,13 +10,13 @@ function main(){
     // tell the player the final score and who won
     
     if (scores[0] > scores[1]){
-        console.log(`${player_name} is the WINNER!`);
+        alert(`${player_name} is the WINNER!`);
     }    
     else if (scores[0] < scores[1]){
-        console.log(`the computer is the WINNER!`);
+        alert(`the computer is the WINNER!`);
     }
     else {
-        console.log("TIE!");
+        alert("TIE! there is no winner");
     }    
 
     // ask the player if he wants to play again
@@ -53,7 +53,7 @@ function play(rounds, name) {
         }
         
         // show the scores after the round
-        console.log(`${name}'s score: ${player_score}\ncomputer's score: ${Computer_score}`)
+        alert(`${name}'s score: ${player_score}\ncomputer's score: ${Computer_score}`)
     }
     // return the score of the rounds
     return [player_score, Computer_score];
