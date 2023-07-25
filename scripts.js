@@ -37,8 +37,6 @@ function play(rounds, name) {
         console.log(`${name}:${player_choice}\ncomputer:${Computer_choice}`)
         // add the scores in condetion of a tie
         if (player_choice === Computer_choice) {
-            Computer_score++;
-            player_score++;
             alert("TIE!!");
         }
         // add the scores in condetion of the player won
