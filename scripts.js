@@ -44,10 +44,10 @@ function main(){
                 choices_container.addEventListener("click", function get_name(e) {
                     
                     if (round_number <= num_of_rounds){
-                        round_number++
+                        
                         player_choice = e.target.className;
 
-                        if (player_choice != ""){
+                        if (player_choice != "" && player_choice != "img-container"){
 
                             Computer_choice = getComputerChoice();
 
@@ -75,6 +75,7 @@ function main(){
                             player_screen_score.textContent = `${player_name}'s score: ${player_score}`;
                             computer_screen_score.textContent = `computer's score; ${Computer_score}`;
 
+                            round_number++
                             if (round_number > num_of_rounds) {
                                 
                                 const winner_header = document.querySelector("#winner-header");
@@ -149,10 +150,10 @@ function main(){
                 choices_container.addEventListener("click", function get_name(e) {
                     
                     if (round_number <= num_of_rounds){
-                        round_number++
+                        
                         player_choice = e.target.className;
 
-                        if (player_choice != ""){
+                        if (player_choice != "" && player_choice != "img-container"){
 
                             Computer_choice = getComputerChoice();
 
@@ -180,7 +181,7 @@ function main(){
                             player_screen_score.textContent = `${player_name}'s score: ${player_score}`;
                             computer_screen_score.textContent = `computer's score; ${Computer_score}`;
                         
-                        
+                            round_number++
                             if (round_number > num_of_rounds) {
                                 
                                 const winner_header = document.querySelector("#winner-header");
