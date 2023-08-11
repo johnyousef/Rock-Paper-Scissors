@@ -73,7 +73,7 @@ function main(){
                             
                             // show the scores after the round
                             player_screen_score.textContent = `${player_name}'s score: ${player_score}`;
-                            computer_screen_score.textContent = `computer's score; ${Computer_score}`;
+                            computer_screen_score.textContent = `computer's score: ${Computer_score}`;
 
                             round_number++
                             if (round_number > num_of_rounds) {
@@ -118,7 +118,7 @@ function main(){
 
         num_of_rounds = Number(document.querySelector('[data-input="number-of-rounds"]').value);    
         // if user puts a valid number         
-        if (num_of_rounds >= 2 && num_of_rounds <= 10 && Number.isInteger(num_of_rounds)) {
+        if (num_of_rounds >= 1 && num_of_rounds <= 10 && Number.isInteger(num_of_rounds)) {
             // remove the rounds form
             form_rounds_input.remove();
             // the number of rounds has been set
@@ -179,7 +179,7 @@ function main(){
                             
                             // show the scores after the round
                             player_screen_score.textContent = `${player_name}'s score: ${player_score}`;
-                            computer_screen_score.textContent = `computer's score; ${Computer_score}`;
+                            computer_screen_score.textContent = `computer's score: ${Computer_score}`;
                         
                             round_number++
                             if (round_number > num_of_rounds) {
@@ -211,7 +211,7 @@ function main(){
                 });
             }
         }else {
-            alert("please write a positive intger from 2 to 10!");
+            alert("please write a positive intger from 1 to 10!");
         }
 
     });
