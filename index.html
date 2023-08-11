@@ -10,20 +10,38 @@
 
     <h1 class="main_header">Welcome to Rock Paper Scissors</h1>
 
-    <form>
-        <div class="form-container">
+    <div class="form">
+        
+        <div class="form-container name-container" >
             <h3> Name </h3>
-            <input type="text">
+            <input data-input="name" type="text">
+            <button class="submit-name"> submit </button>
         </div>
-        <div class="form-container">
-            <h3> Number of rounds </h3>
-            <input type="text">
-        </div>
-    </form>
 
-    <div class="link-container">
-        <a href="game.html"> start game </a>
+        <div class="form-container rounds-container">
+            <h3> Number of rounds </h3>
+            <input data-input="number-of-rounds" type="text">
+            <button class="submit-rounds" > submit </button>
+        </div>
+        
     </div>
-    <!-- <script src="scripts.js"></script> -->
+    
+    <div class="img-container">
+        <img class="rock" src="imgs/rock.png" alt="rock img">
+        <img class="paper" src="imgs/paper.png" alt="paper img">
+        <img class="scissors" src="imgs/scissors.png" alt="scissors img">
+    </div>
+
+    <div class="scores-container">
+        <h2 class="score player"></h2>
+        <h2 class="score computer"></h2>
+    </div>
+
+    <h2 id="status"></h2>
+    <h1 id="winner-header"></h1>
+
+    <div class="link-container"></div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

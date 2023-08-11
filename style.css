@@ -5,22 +5,27 @@ body, html{
 }
 
 body {
-    background-color: rgb(125, 78, 255);
+    background-color: rgb(226, 249, 253);
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 12px;
     padding: 12px;
     align-items: center;
 }
 
 .form-container {
+    border: 2px solid black;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: aquamarine;
     text-align: center;
 }
 
 .main_header {
+    text-decoration: underline;
     text-align: center;
 }
 
@@ -52,4 +57,34 @@ a {
     text-decoration: underline;
     padding: 12px;
     margin: -4px;
+}
+
+img {
+    width: 100px;
+    height: 120px;
+    border: 2px solid blue;
+    border-radius: 16px;
+    padding: 12px;
+    background-color: aquamarine;
+}
+
+img:hover{
+    padding: 16px;
+    margin: -4px;
+    border-color: rgb(0, 0, 129);
+    background-color: rgb(49, 224, 166);
+}
+
+.img-container, .scores-container {
+    margin: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#status {
+    text-align: center;
+}
+
+#winner-header {
+    text-align: center;
 }
