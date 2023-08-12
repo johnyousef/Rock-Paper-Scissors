@@ -59,9 +59,18 @@ a {
     margin: -4px;
 }
 
+.img-container, .scores-container {
+    margin: 12px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    gap: 6px;
+}
+
 img {
-    width: 100px;
-    height: 120px;
+    flex: 1 1 1;
+    max-width: 200px;
+    max-height: 240px;
     border: 2px solid blue;
     border-radius: 16px;
     padding: 12px;
@@ -73,12 +82,6 @@ img:hover{
     margin: -4px;
     border-color: rgb(0, 0, 129);
     background-color: rgb(49, 224, 166);
-}
-
-.img-container, .scores-container {
-    margin: 12px;
-    display: flex;
-    justify-content: space-around;
 }
 
 #status {
